@@ -1,0 +1,140 @@
+/* POLICES */
+@font-face
+{
+	font-family:"amatic";
+	src: url("font/AmaticSC-Regular.ttf") format("truetype");
+
+}
+@font-face
+{
+	font-family:"kalamL";
+	src: url("font/Kalam-Light.ttf") format("truetype");
+
+}
+
+/* Début barre de navigation */
+#nav
+{
+  padding: 0;
+  margin: auto;
+  text-align: center;
+  font-family: amatic;
+  font-size: 2em;
+	background-color: #FA6E59;
+	width: auto;
+	height: auto;
+	border:2px;solid;transparent;
+	border-radius: 10px;
+}
+#nav li
+{
+  display: inline;
+  list-style:none;
+}
+#nav a
+{
+  display: inline-block;
+  margin: 0 30px;
+}
+
+nav a
+{
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+
+}
+nav a:hover
+{
+	color: white;
+	border-bottom: 2px solid gold;
+}
+
+/* Fin barre de navigation */
+
+body
+{
+  background-color: #F8A055;
+}
+
+.titre
+{
+  text-align: center;
+  font-size: 5em;
+  font-family: amatic;
+}
+
+h2
+{
+  text-align: center;
+  font-family: kalamL;
+  margin-top: 3%;
+  font-size: 2em;
+  text-decoration: underline;
+}
+/* CONTAINER DES DIPLOME SCIENTIFIQUE & DIPLOME INFORMATIQUES */
+.container
+{
+  display: flex;
+  margin-top: 5%;
+  font-size: 1.4em;
+  justify-content: center;
+  font-family: Verdanna,sans-serif;
+
+
+}
+
+.logo_science
+{
+
+  margin-left: 38%;
+}
+
+.logo_computer
+{
+
+  margin-left: 20%;
+
+}
+
+.simplon
+{
+  padding-left: 10%;
+  width: 30%;
+}
+
+ul
+{
+  list-style-type: none;
+}
+/* EXPERIENCES */
+.exp
+{
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  border:2px solid black;
+  background-color:  #FA6E59;
+  width: auto;
+  font-family: Verdanna, sans-serif;
+
+
+  margin-top: 3%;
+  font-size: 1.5em;
+}
+/* HOBBIES */
+.hobbies_icons1
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+.hobbies_icons2
+{
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-around;
+}

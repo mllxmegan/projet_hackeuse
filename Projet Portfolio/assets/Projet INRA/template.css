@@ -1,0 +1,55 @@
+h1
+{
+  color:#58350d;
+}
+
+h3
+{
+	/* text-decoration: underline; */
+	font-style: italic;
+}
+body
+{
+  background-color: #e5d3b5;
+  font-family: Arial,"sans-serif";
+}
+
+.pain_img
+{
+	border-radius: 10px;
+}
+.sous_partie
+{
+  /* text-decoration: underline; */
+}
+
+.contact
+{
+
+  display: inline;
+}
+
+.ytbe
+{
+	width: 5em;
+	height: 5em;
+	margin-right: 20px;
+}
+
+.insta
+{
+	width: 4em;
+	height: 4em;
+	margin-right: 20px;text-decoration
+}
+.twitter
+{
+	width: 4em;
+	height: 4em;
+	margin-right: 20px;
+}
+a
+{
+  text-decoration: none;
+
+}

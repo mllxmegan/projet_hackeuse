@@ -1,0 +1,162 @@
+@font-face
+{
+	font-family:"amatic";
+	src: url("font/AmaticSC-Regular.ttf") format("truetype");
+
+}
+@font-face
+{
+	font-family:"kalamL";
+	src: url("font/Kalam-Light.ttf") format("truetype");
+
+}
+
+/* Début barre de navigation */
+#nav
+{
+  padding: 0;
+  margin: auto;
+  text-align: center;
+  font-family: amatic;
+  font-size: 2em;
+	background-color: #FA6E59;
+	width: auto;
+	height: auto;
+	border:2px;solid;transparent;
+	border-radius: 10px;
+}
+#nav li
+{
+  display: inline;
+  list-style:none;
+}
+#nav a
+{
+  display: inline-block;
+  margin: 0 30px;
+}
+
+nav a
+{
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+
+}
+nav a:hover
+{
+	color: white;
+	border-bottom: 2px solid gold;
+}
+
+/* Fin barre de navigation */
+
+body
+{
+  background-color: #F8A055;
+}
+.titre
+{
+  text-align: center;
+  font-size: 5em;
+  font-family: amatic;
+}
+
+/*Formulaire*/
+
+form
+{
+  width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+
+
+}
+fieldset{
+  background-color: #62C492;
+	border: hidden;
+	border-radius: 8px;
+
+}
+
+legend
+{
+  font-weight: bold;
+	font-family: kalamL;
+	font-size: 3em;
+	color: #FA6E59;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
+
+
+}
+
+label
+{
+
+	font-family: Verdana;
+}
+.champ
+{
+  margin-bottom: 10px;
+
+}
+
+textarea
+{
+  width: 80%;
+  height: 100px;
+}
+
+input
+{
+  width: 150px;
+}
+
+
+.envoyer
+{
+	font-size: 1.5em;
+	font-weight: bold;
+	font-style: italic;
+	color: black;
+	text-decoration: underline;
+}
+
+/* LOGO INSTAGRAM */
+.linkedin
+{
+	margin-top: 5%;
+	margin-left: 35%;
+	width: 7%;
+	height: 7%;
+
+}
+
+/* LOGO LINKEDIN */
+.insta
+{
+margin-left: 5%;
+margin-top: 5%;
+width: 7%;
+height: 7%;
+}
+
+/* LOGO FACEBOOK */
+.facebook
+{
+margin-left: 5%;
+margin-top: 5%;
+width: 7%;
+height: 7%;
+}
+
+/* POUR ENLEVER LE "-" EN BAS A DROITE DES IMG */
+a
+{
+	text-decoration: none;
+}

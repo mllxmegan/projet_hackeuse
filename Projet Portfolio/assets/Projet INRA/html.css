@@ -1,0 +1,50 @@
+
+#logo
+{
+display: flex;
+justify-content:center;
+}
+
+
+
+#nav
+{
+  padding: 0;
+  margin: auto;
+  text-align: center;
+	background-color: darkgrey;
+	width: 55%;
+	height: auto;
+	border:2px;solid;transparent;
+	border-radius: 10px;
+}
+#nav li
+{
+  display: inline;
+  list-style:none;
+}
+#nav a
+{
+  display: inline-block;
+  margin: 0 30px;
+}
+
+nav a
+{
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+}
+
+#logo
+{
+display: flex;
+justify-content: center;
+}
+nav a:hover
+{
+	color: black;
+	border-bottom: 2px solid gold;

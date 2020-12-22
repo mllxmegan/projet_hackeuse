@@ -1,0 +1,82 @@
+@font-face
+{
+	font-family:"amatic";
+	src: url("font/AmaticSC-Regular.ttf") format("truetype");
+
+}
+@font-face
+{
+	font-family:"kalamL";
+	src: url("font/Kalam-Light.ttf") format("truetype");
+
+}
+
+/* Début barre de navigation */
+#nav
+{
+  padding: 0;
+  margin: auto;
+  text-align: center;
+  font-family: amatic;
+  font-size: 2em;
+	background-color: #FA6E59;
+	width: auto;
+	height: auto;
+	border:2px;solid;transparent;
+	border-radius: 10px;
+}
+#nav li
+{
+  display: inline;
+  list-style:none;
+}
+#nav a
+{
+  display: inline-block;
+  margin: 0 30px;
+}
+
+nav a
+{
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+
+}
+nav a:hover
+{
+	color: white;
+	border-bottom: 2px solid gold;
+}
+
+/* Fin barre de navigation */
+
+body
+{
+  background-color: #F8A055;
+}
+.titre
+{
+  text-align: center;
+  font-size: 5em;
+  font-family: amatic;
+}
+
+.presentation
+{
+  text-align: center;
+  font-size: 1.5em;
+  font-family: Verdanna, sans-serif;
+}
+
+.titre1
+{
+  font-family: amatic;
+  font-size: 2em;
+  text-decoration: underline;
+	padding-top: 1em;
+	text-align: center;
+}

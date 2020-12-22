@@ -1,0 +1,125 @@
+/* POLICES */
+@font-face
+{
+	font-family:"amatic";
+	src: url("font/AmaticSC-Regular.ttf") format("truetype");
+
+}
+@font-face
+{
+	font-family:"kalamL";
+	src: url("font/Kalam-Light.ttf") format("truetype");
+
+}
+
+/* Début barre de navigation */
+#nav
+{
+  padding: 0;
+  margin: auto;
+  text-align: center;
+  font-family: amatic,sans-serif;
+  font-size: 2em;
+	background-color: #FA6E59;
+	width: auto;
+	height: auto;
+	border:2px;solid;transparent;
+	border-radius: 10px;
+}
+#nav li
+{
+  display: inline;
+  list-style:none;
+}
+#nav a
+{
+  display: inline-block;
+  margin: 0 30px;
+}
+nav a
+{
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+}
+nav a:hover
+{
+	color: white;
+	border-bottom: 2px solid gold;
+}
+
+/* Fin barre de navigation */
+
+body
+{
+  background-color: #F8A055;
+}
+.titre
+{
+  text-align: center;
+  font-size: 5em;
+  font-family: amatic,sans-serif;
+}
+
+/* Partie création */
+
+/* CONTAINER FASTFOOD: PLACEMENT ET ESPACEMENT EN HAUT */
+.fastfood
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+
+}
+/* IMG FASTFOOD: TAILLE ET ESPACEMENT ENTRE LES IMG*/
+.burger,.frites,.coca
+{
+  width: 20%;
+  height: 20%;
+}
+.burger,.frites
+{
+  padding-right: 1%;
+}
+/* CONTAINER SUGAR: PLACEMENT ET ESPACEMENT EN HAUT */
+.sugar
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+
+}
+
+/* IMG SUGAR: TAILLE ET ESPACEMENT ENTRE LES IMG*/
+.donut,.glace,.lolipop
+{
+  width: 20%;
+  height: 20%;
+}
+.donut,.glace
+{
+  padding-right: 1%;
+}
+
+/* CONTAINER FRUITS: PLACEMENT ET ESPACEMENT EN HAUT */
+
+.fruit
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+/* IMG FRUITS: TAILLE ET ESPACEMENT ENTRE LES IMG*/
+.ananas,.banane,.fraise
+{
+	width: 20%;
+	height: 20%;
+}
+.ananas,.banane
+{
+	padding-right: 1%;
+}

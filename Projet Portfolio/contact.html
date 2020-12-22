@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Mon projet confinement</title>
+    <link rel="stylesheet" href="assets/contact.css">
+
+  </head>
+  <body>
+
+    <header>
+      <h1 class="titre">Mon projet confinement</h1>
+    </header>
+
+                            <!-- MENU DE NAVIGATION -->
+    <nav>
+    <ul id="nav">
+      <li class="acceuil"> <a href="acceuil.html">Home</a> </li>
+      <li class="cv"> <a href="cv.html"> Mon CV </a></li>
+      <li class="creations"> <a href="creations.html">Mes créations</a> </li>
+<li class="sites"> <a href="projet.html">Mes projets de formation </a> </li>
+      <li class="contact"> <a href="contact.html">Me contacter</a> </li>
+    </ul>
+  </nav>
+
+                            <!-- RESEAUX SOCIAUX -->
+    <a href="https://www.linkedin.com/in/megan-barcelona/"target="blank"><img src="assets/img/icon_linkedin.png" class="linkedin" alt= "linkedin" > </a>
+    <a href="https://www.instagram.com/flatworld_design/?hl=fr"target="blank"><img src="assets/img/icon_insta.png" class="insta" alt= "instagram"> </a>
+    <a href="https://www.facebook.com/meganbarcelona11"target="blank"><img src="assets/img/facebook.png" class="facebook" alt= "facebook" > </a>
+
+                               <!-- FORMULAIRE -->
+      <form action="form.php" method="post">
+          <fieldset>
+
+            <div class="champ">
+              <legend>Contact : </legend>
+              <label for="nom">Nom : </label>
+              <input type="text" name="nom" id="nom" minlength="2" maxlength="25"required>
+             </div>
+             <div class="champ">
+               <label for="mail">Adresse email : </label>
+               <input type="mail" name="mail" id="mail" required>
+             </div>
+      <div class="champ">
+        <textarea name="msg" placeholder="Ecrivez votre message..." maxlength="500"></textarea>
+        <a class="envoyer"href="mailto:mbarcelona11@hotmail.fr">Envoyer</a>
+        </fieldset>
+      </div>
+
+
+      </form>
+
+    </body>
+    </html>

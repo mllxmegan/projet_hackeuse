@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Le pendu THE GAME</title>
+    <link rel="stylesheet" href="pendu1.css">
+    <script language="JavaScript">
+
+    var motSecret;
+
+    var now=new Date();
+    var tableauMot=new Array();
+    var mots=new Array();
+
+    var tailleMot;
+    var coupsManques=0;
+    var lettresTrouvees=0;
+    var fini=false;
+
+    mots[0]="DOCTORWHO";
+    mots[1]="SMALLVILLE";
+    mots[2]="HEROES";
+    mots[3]="QUANTICO";
+    mots[4]="RIVERDALE";
+    mots[5]="MURDER";
+    mots[6]="DYNASTIE";
+    mots[7]="LOST";
+    mots[8]="DARDEVIL";
+    mots[9]="FRIENDS";
+    mots[10]="LUCIFER";
+    mots[11]="SOUTHPARK";
+    mots[12]="XFILES";
+    mots[13]="SUPERNATURAL";
+    mots[14]="SHERLOCK";
+    mots[15]="COLUMBO";
+    mots[16]="STARTREK";
+    mots[17]="DRHOUSE";
+    mots[18]="SIMPSON";
+    mots[19]="FUTURAMA";
+    mots[20]="SILICONVALLEY";
+
+
+    motSecret=mots[now.getSeconds() % mots.length];
+    tailleMot=motSecret.length;
+
+    function changeCouleur(element,couleur){
+       element.style.backgroundColor=couleur;
+    }
+
+    function proposer(element){
+      if (element.style.backgroundColor=="lightGreen" ||fini) return;
+      var lettre=element.innerHTML;
+      changeCouleur(element,"lightGreen");
+      var trouve=false;
+      for (var i=0; i<tailleMot; i++) {
+
+        if(tableauMot[i].innerHTML==lettre) {
+            tableauMot[i].style.visibility='visible';
+        trouve=true;
+        lettresTrouvees++;
+      }
+    }
+
+    if(!trouve){
+      coupsManques++;
+      document.images['pendu'].src="images/pendu_"+coupsManques+".jpg";
+    if(coupsManques==9){
+      alert("AH! AH! T une merde!");
+      for (var i=0; i<tailleMot; i++) tableauMot[i].style.visibility='visible';
+      fini=true;
+      }
+    }
+
+    if(lettresTrouvees==tailleMot){
+      alert("GG! T un monstre !");
+      fini=true;
+    }
+    }
+    </script>
+
+  </head>
+  <body>
+
+  <center>
+  <div id="page">
+
+  	<img name="pendu" class="pendu" src="images/pendu_0.jpg">
+
+  	<h1>Pendu THE GAME <br>(Special Séries)</h1>
+
+  	<h2>Entrez une lettre grâce au clavier ci-dessous ; si elle est dans le mot secret, elle sera affichée mais sinon... la sentence se rapprochera !</h2>
+
+  	<table id="clavier">
+  	 <tr>
+  	  <td onclick="proposer(this);" >A</td>
+  	  <td onclick="proposer(this);" >B</td>
+  	  <td onclick="proposer(this);" >C</td>
+  	  <td onclick="proposer(this);" >D</td>
+  	  <td onclick="proposer(this);" >E</td>
+  	  <td onclick="proposer(this);" >F</td>
+  	  <td onclick="proposer(this);" >G</td>
+  	  <td onclick="proposer(this);" >H</td>
+  	  <td onclick="proposer(this);" >I</td>
+  	  <td onclick="proposer(this);" >J</td>
+  	 </tr>
+  	 <tr>
+  	  <td onclick="proposer(this);" >K</td>
+  	  <td onclick="proposer(this);" >L</td>
+  	  <td onclick="proposer(this);" >M</td>
+  	  <td onclick="proposer(this);" >N</td>
+  	  <td onclick="proposer(this);" >O</td>
+  	  <td onclick="proposer(this);" >P</td>
+  	  <td onclick="proposer(this);" >Q</td>
+  	  <td onclick="proposer(this);" >R</td>
+  	  <td onclick="proposer(this);" >S</td>
+  	  <td onclick="proposer(this);" >T</td>
+  	 </tr>
+  	 <tr>
+  	  <td onclick="proposer(this);" >U</td>
+  	  <td onclick="proposer(this);" >V</td>
+  	  <td onclick="proposer(this);" >W</td>
+  	  <td onclick="proposer(this);" >X</td>
+  	  <td onclick="proposer(this);" >Y</td>
+  	  <td onclick="proposer(this);" >Z</td>
+  	 </tr>
+  	</table>
+  	<br>
+  <span>	<a class="lien" href="javascript:location.reload();">Nouvelle partie</a></span>
+
+  	<table id="mot">
+  		<tr>
+
+        <script language="javascript">
+          for(var i=0; i<tailleMot; i++) document.write("<td> <p id=\""+i+"\">"+motSecret.charAt(i)+"</p></td>");
+        </script>
+      </tr>
+    </table>
+
+
+    <script language="javascript">
+      for(var i=0; i<tailleMot; i++) tableauMot[i]=document.getElementById(i);
+    </script>
+
+  <center>
+  </div>
+  </body>
+</html>
